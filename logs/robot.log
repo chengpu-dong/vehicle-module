@@ -1,0 +1,124 @@
+[2026-03-31 14:51:42] INFO     root: Logging to file: logs/robot.log
+[2026-03-31 14:51:42] INFO     RobotApp: ==================================================
+[2026-03-31 14:51:42] INFO     RobotApp:   具身智能机器人 MVP - 底盘控制模块
+[2026-03-31 14:51:42] INFO     RobotApp: ==================================================
+[2026-03-31 14:51:42] INFO     RobotApp: [Init] Using MOCK ESP32 driver (no hardware needed)
+[2026-03-31 14:51:42] INFO     root: [MockESP32] Mock connected (no real hardware)
+[2026-03-31 14:51:42] INFO     services.chassis_service: [ChassisService] Started, connected to ESP32
+[2026-03-31 14:51:42] INFO     core.skill_dispatcher: [Dispatcher] ChassisService registered
+[2026-03-31 14:51:42] INFO     core.command_parser: [CommandParser] Loaded 12 commands from configs/skills.json
+[2026-03-31 14:51:42] INFO     websockets.server: server listening on 0.0.0.0:8765
+[2026-03-31 14:51:42] INFO     app_api.websocket_server: [AppWS] Server started on ws://0.0.0.0:8765
+[2026-03-31 14:51:42] INFO     RobotApp: [Init] ✅ All modules ready!
+[2026-03-31 14:51:42] INFO     RobotApp: [Init] App WebSocket: ws://0.0.0.0:8765
+[2026-03-31 14:51:42] INFO     RobotApp: [Init] ESP32 WebSocket: ws://192.168.1.100:81
+[2026-03-31 14:51:42] INFO     RobotApp: [Init] Press Ctrl+C to stop
+[2026-03-31 14:51:45] INFO     RobotApp: [Shutdown] Stopping robot...
+[2026-03-31 14:51:45] INFO     services.chassis_service: [ChassisService] stop
+[2026-03-31 14:51:45] INFO     root: [MockESP32] 🔧 Skill: chassis.stop params={}
+[2026-03-31 14:51:45] INFO     root: [MockESP32] Mock disconnected
+[2026-03-31 14:51:45] INFO     websockets.server: server closing
+[2026-03-31 14:51:45] INFO     websockets.server: server closed
+[2026-03-31 14:51:45] INFO     RobotApp: [Shutdown] Done. Goodbye! 🤖
+[2026-03-31 14:52:30] INFO     root: Logging to file: logs/robot.log
+[2026-03-31 14:52:30] INFO     RobotApp: ==================================================
+[2026-03-31 14:52:30] INFO     RobotApp:   具身智能机器人 MVP - 底盘控制模块
+[2026-03-31 14:52:30] INFO     RobotApp: ==================================================
+[2026-03-31 14:52:30] INFO     RobotApp: [Init] Using MOCK ESP32 driver (no hardware needed)
+[2026-03-31 14:52:30] INFO     root: [MockESP32] Mock connected (no real hardware)
+[2026-03-31 14:52:30] INFO     services.chassis_service: [ChassisService] Started, connected to ESP32
+[2026-03-31 14:52:30] INFO     core.skill_dispatcher: [Dispatcher] ChassisService registered
+[2026-03-31 14:52:30] INFO     core.command_parser: [CommandParser] Loaded 12 commands from configs/skills.json
+[2026-03-31 14:52:30] INFO     websockets.server: server listening on 0.0.0.0:8765
+[2026-03-31 14:52:30] INFO     app_api.websocket_server: [AppWS] Server started on ws://0.0.0.0:8765
+[2026-03-31 14:52:30] INFO     RobotApp: [Init] ✅ All modules ready!
+[2026-03-31 14:52:30] INFO     RobotApp: [Init] App WebSocket: ws://0.0.0.0:8765
+[2026-03-31 14:52:30] INFO     RobotApp: [Init] ESP32 WebSocket: ws://192.168.1.100:81
+[2026-03-31 14:52:30] INFO     RobotApp: [Init] Press Ctrl+C to stop
+[2026-03-31 14:52:32] INFO     websockets.server: connection open
+[2026-03-31 14:52:32] INFO     app_api.websocket_server: [AppWS] App connected from ('127.0.0.1', 49708)
+[2026-03-31 14:52:32] INFO     core.skill_dispatcher: [Dispatcher] dispatch skill=chassis.move source=system req=ef2a7e5f
+[2026-03-31 14:52:32] INFO     services.chassis_service: [ChassisService] move_forward speed=0.5
+[2026-03-31 14:52:32] INFO     root: [MockESP32] 🔧 Skill: chassis.move params={'direction': 'forward', 'speed': 0.5}
+[2026-03-31 14:52:32] INFO     core.skill_dispatcher: [Dispatcher] dispatch skill=chassis.move source=system req=f8df3340
+[2026-03-31 14:52:32] INFO     services.chassis_service: [ChassisService] turn_right speed=0.4
+[2026-03-31 14:52:32] INFO     root: [MockESP32] 🔧 Skill: chassis.move params={'direction': 'right', 'speed': 0.4}
+[2026-03-31 14:52:33] INFO     core.skill_dispatcher: [Dispatcher] dispatch skill=chassis.stop source=system req=81e99f1a
+[2026-03-31 14:52:33] INFO     services.chassis_service: [ChassisService] stop
+[2026-03-31 14:52:33] INFO     root: [MockESP32] 🔧 Skill: chassis.stop params={}
+[2026-03-31 14:52:33] INFO     core.skill_dispatcher: [Dispatcher] dispatch skill=chassis.drive source=system req=14241441
+[2026-03-31 14:52:33] INFO     root: [MockESP32] 🔧 Skill: chassis.drive params={'linear': 0.6, 'angular': -0.3}
+[2026-03-31 14:52:33] INFO     core.skill_dispatcher: [Dispatcher] dispatch skill=chassis.move source=system req=4fb4da1d
+[2026-03-31 14:52:33] INFO     services.chassis_service: [ChassisService] move_timed dir=forward speed=0.5 duration=1000ms
+[2026-03-31 14:52:33] INFO     root: [MockESP32] 🔧 Skill: chassis.move params={'direction': 'forward', 'speed': 0.5, 'duration': 1000}
+[2026-03-31 14:52:35] INFO     app_api.websocket_server: [AppWS] ASR -> skill: chassis.move text='前进'
+[2026-03-31 14:52:35] INFO     core.skill_dispatcher: [Dispatcher] dispatch skill=chassis.move source=asr req=asr-24ec5e
+[2026-03-31 14:52:35] INFO     services.chassis_service: [ChassisService] move_forward speed=0.5
+[2026-03-31 14:52:35] INFO     root: [MockESP32] 🔧 Skill: chassis.move params={'direction': 'forward', 'speed': 0.5}
+[2026-03-31 14:52:35] INFO     app_api.websocket_server: [AppWS] ASR -> skill: chassis.move text='前进两秒'
+[2026-03-31 14:52:35] INFO     core.skill_dispatcher: [Dispatcher] dispatch skill=chassis.move source=asr req=asr-9467a8
+[2026-03-31 14:52:35] INFO     services.chassis_service: [ChassisService] move_timed dir=forward speed=0.5 duration=2000ms
+[2026-03-31 14:52:35] INFO     root: [MockESP32] 🔧 Skill: chassis.move params={'direction': 'forward', 'speed': 0.5, 'duration': 2000}
+[2026-03-31 14:52:36] INFO     app_api.websocket_server: [AppWS] ASR -> skill: arm.execute_preset text='挥手'
+[2026-03-31 14:52:36] INFO     core.skill_dispatcher: [Dispatcher] dispatch skill=arm.execute_preset source=asr req=asr-ffd658
+[2026-03-31 14:52:36] WARNING  core.skill_dispatcher: [Dispatcher] Unknown skill: arm.execute_preset
+[2026-03-31 14:52:36] INFO     core.skill_dispatcher: [Dispatcher] dispatch skill=chassis.move source=system req=c2d3f770
+[2026-03-31 14:52:36] INFO     services.chassis_service: [ChassisService] move_forward speed=0.8
+[2026-03-31 14:52:36] INFO     root: [MockESP32] 🔧 Skill: chassis.move params={'direction': 'forward', 'speed': 0.8}
+[2026-03-31 14:52:36] INFO     core.skill_dispatcher: [Dispatcher] dispatch skill=system.emergency_stop source=system req=98c86cca
+[2026-03-31 14:52:36] WARNING  core.skill_dispatcher: [Dispatcher] ⚠️  EMERGENCY STOP triggered!
+[2026-03-31 14:52:36] WARNING  services.chassis_service: [ChassisService] EMERGENCY STOP!
+[2026-03-31 14:52:36] INFO     root: [MockESP32] 🔧 Skill: system.emergency_stop params={}
+[2026-03-31 14:52:37] INFO     core.skill_dispatcher: [Dispatcher] dispatch skill=chassis.move source=system req=247f8190
+[2026-03-31 14:52:37] WARNING  core.skill_dispatcher: [Dispatcher] BLOCKED by emergency stop: skill=chassis.move
+[2026-03-31 14:52:37] INFO     core.skill_dispatcher: [Dispatcher] dispatch skill=system.clear_emergency_stop source=system req=ebcf7d6a
+[2026-03-31 14:52:37] INFO     core.skill_dispatcher: [Dispatcher] Emergency stop cleared
+[2026-03-31 14:52:37] INFO     services.chassis_service: [ChassisService] Clear emergency stop
+[2026-03-31 14:52:37] INFO     root: [MockESP32] 🔧 Skill: system.clear_emergency_stop params={}
+[2026-03-31 14:52:37] INFO     core.skill_dispatcher: [Dispatcher] dispatch skill=chassis.move source=system req=6367b238
+[2026-03-31 14:52:37] INFO     services.chassis_service: [ChassisService] move_forward speed=0.5
+[2026-03-31 14:52:37] INFO     root: [MockESP32] 🔧 Skill: chassis.move params={'direction': 'forward', 'speed': 0.5}
+[2026-03-31 14:52:37] INFO     core.skill_dispatcher: [Dispatcher] dispatch skill=system.get_status source=system req=df6cc513
+[2026-03-31 14:52:37] INFO     root: [MockESP32] 🔧 Skill: system.get_status params={}
+[2026-03-31 14:52:37] WARNING  app_api.websocket_server: [AppWS] Client gone, triggering emergency stop
+[2026-03-31 14:52:37] INFO     core.skill_dispatcher: [Dispatcher] dispatch skill=chassis.stop source=system req=536801b8
+[2026-03-31 14:52:37] INFO     services.chassis_service: [ChassisService] stop
+[2026-03-31 14:52:37] INFO     root: [MockESP32] 🔧 Skill: chassis.stop params={}
+[2026-03-31 14:52:38] INFO     RobotApp: [Shutdown] Stopping robot...
+[2026-03-31 14:52:38] INFO     services.chassis_service: [ChassisService] stop
+[2026-03-31 14:52:38] INFO     root: [MockESP32] 🔧 Skill: chassis.stop params={}
+[2026-03-31 14:52:38] INFO     root: [MockESP32] Mock disconnected
+[2026-03-31 14:52:38] INFO     websockets.server: server closing
+[2026-03-31 14:52:38] INFO     websockets.server: server closed
+[2026-03-31 14:52:38] INFO     RobotApp: [Shutdown] Done. Goodbye! 🤖
+[2026-03-31 20:56:33] INFO     root: Logging to file: logs/robot.log
+[2026-03-31 20:56:33] INFO     RobotApp: ==================================================
+[2026-03-31 20:56:33] INFO     RobotApp:   具身智能机器人 MVP - 底盘控制模块
+[2026-03-31 20:56:33] INFO     RobotApp: ==================================================
+[2026-03-31 20:56:33] INFO     RobotApp: [Init] Connecting to ESP32 at ws://192.168.43.36:81
+[2026-03-31 20:56:33] INFO     drivers.esp32_driver: [ESP32Driver] Connecting to ws://192.168.43.36:81 ...
+[2026-03-31 20:56:33] ERROR    drivers.esp32_driver: [ESP32Driver] Connection failed: [Errno 65] Connect call failed ('192.168.43.36', 81)
+[2026-03-31 20:56:33] ERROR    services.chassis_service: [ChassisService] Failed to connect to ESP32
+[2026-03-31 20:56:33] ERROR    RobotApp: [Init] Failed to connect to ESP32. Tip: Use --mock flag for development without hardware.
+[2026-03-31 20:58:56] INFO     root: Logging to file: logs/robot.log
+[2026-03-31 20:58:56] INFO     RobotApp: ==================================================
+[2026-03-31 20:58:56] INFO     RobotApp:   具身智能机器人 MVP - 底盘控制模块
+[2026-03-31 20:58:56] INFO     RobotApp: ==================================================
+[2026-03-31 20:58:56] INFO     RobotApp: [Init] Connecting to ESP32 at ws://192.168.43.36:81
+[2026-03-31 20:58:56] INFO     drivers.esp32_driver: [ESP32Driver] Connecting to ws://192.168.43.36:81 ...
+[2026-03-31 20:58:57] INFO     drivers.esp32_driver: [ESP32Driver] Connected successfully
+[2026-03-31 20:58:57] INFO     services.chassis_service: [ChassisService] Started, connected to ESP32
+[2026-03-31 20:58:57] INFO     core.skill_dispatcher: [Dispatcher] ChassisService registered
+[2026-03-31 20:58:57] INFO     core.command_parser: [CommandParser] Loaded 12 commands from configs/skills.json
+[2026-03-31 20:58:57] INFO     websockets.server: server listening on 0.0.0.0:8765
+[2026-03-31 20:58:57] INFO     app_api.websocket_server: [AppWS] Server started on ws://0.0.0.0:8765
+[2026-03-31 20:58:57] INFO     RobotApp: [Init] ✅ All modules ready!
+[2026-03-31 20:58:57] INFO     RobotApp: [Init] App WebSocket: ws://0.0.0.0:8765
+[2026-03-31 20:58:57] INFO     RobotApp: [Init] ESP32 WebSocket: ws://192.168.43.36:81
+[2026-03-31 20:58:57] INFO     RobotApp: [Init] Press Ctrl+C to stop
+[2026-03-31 20:59:08] INFO     RobotApp: [Shutdown] Stopping robot...
+[2026-03-31 20:59:08] INFO     services.chassis_service: [ChassisService] stop
+[2026-03-31 20:59:08] INFO     drivers.esp32_driver: [ESP32Driver] Disconnected
+[2026-03-31 20:59:08] INFO     websockets.server: server closing
+[2026-03-31 20:59:08] INFO     websockets.server: server closed
+[2026-03-31 20:59:08] INFO     RobotApp: [Shutdown] Done. Goodbye! 🤖

@@ -1,0 +1,18 @@
+# requirements.txt
+# Edge Agent Python 依赖
+
+# WebSocket 客户端（连接 ESP32）
+websockets>=12.0
+
+# JSON 处理（标准库已包含，但 ujson 更快，可选）
+# ujson>=5.0
+
+# YAML 配置文件解析
+PyYAML>=6.0
+
+# 键盘输入捕获（键盘遥控测试工具使用）
+pynput>=1.7.0
+
+# 异步 HTTP 服务器（用于 REST API，可选）
+# fastapi>=0.110.0
+# uvicorn[standard]>=0.29.0
